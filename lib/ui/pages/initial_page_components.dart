@@ -8,12 +8,12 @@ class MainRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: 200,
+      height: 100,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
-            padding: const EdgeInsets.only(left:20),
+            padding: const EdgeInsets.only(left: 20),
             child: FaIcon(
               FontAwesomeIcons.home,
               color: Colors.white,
@@ -28,6 +28,84 @@ class MainRow extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+}
+
+List<CircleAvatar> menuList = [
+  CircleAvatar(
+    backgroundColor: Colors.blueAccent,
+    radius: 60,
+    child: FaIcon(
+      FontAwesomeIcons.solidHeart,
+      color: Colors.white,
+      size: 50,
+    ),
+  ),
+  CircleAvatar(
+    backgroundColor: Colors.blueAccent,
+    radius: 60,
+    child: FaIcon(
+      FontAwesomeIcons.solidHeart,
+      color: Colors.white,
+      size: 50,
+    ),
+  ),
+  CircleAvatar(
+    backgroundColor: Colors.blueAccent,
+    radius: 60,
+    child: FaIcon(
+      FontAwesomeIcons.solidHeart,
+      color: Colors.white,
+      size: 50,
+    ),
+  ),
+  CircleAvatar(
+    backgroundColor: Colors.blueAccent,
+    radius: 60,
+    child: FaIcon(
+      FontAwesomeIcons.solidHeart,
+      color: Colors.white,
+      size: 50,
+    ),
+  ),
+  CircleAvatar(
+    backgroundColor: Colors.blueAccent,
+    radius: 60,
+    child: FaIcon(
+      FontAwesomeIcons.solidHeart,
+      color: Colors.white,
+      size: 50,
+    ),
+  ),
+  CircleAvatar(
+    backgroundColor: Colors.blueAccent,
+    radius: 60,
+    child: FaIcon(
+      FontAwesomeIcons.solidHeart,
+      color: Colors.white,
+      size: 50,
+    ),
+  ),
+
+];
+
+class MenuList extends StatelessWidget {
+  const MenuList({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: ListView.builder(
+          itemCount: menuList.length,
+          scrollDirection: Axis.horizontal,
+          shrinkWrap: true,
+          itemBuilder: (context, index) {
+            return Padding(
+              padding: const EdgeInsets.all(30),
+              child: menuList[index],
+            );
+          }),
     );
   }
 }
