@@ -34,56 +34,56 @@ class MainRow extends StatelessWidget {
 
 List<CircleAvatar> menuList = [
   CircleAvatar(
-    backgroundColor: Colors.blueAccent,
-    radius: 60,
+    backgroundColor: Colors.white,
+    radius: 100,
     child: FaIcon(
       FontAwesomeIcons.solidHeart,
-      color: Colors.white,
+      color: Colors.blueAccent,
       size: 50,
     ),
   ),
   CircleAvatar(
-    backgroundColor: Colors.blueAccent,
-    radius: 60,
+    backgroundColor: Colors.white,
+    radius: 100,
     child: FaIcon(
       FontAwesomeIcons.solidHeart,
-      color: Colors.white,
+      color: Colors.blueAccent,
       size: 50,
     ),
   ),
   CircleAvatar(
-    backgroundColor: Colors.blueAccent,
-    radius: 60,
+    backgroundColor: Colors.white,
+    radius: 100,
     child: FaIcon(
       FontAwesomeIcons.solidHeart,
-      color: Colors.white,
+      color: Colors.blueAccent,
       size: 50,
     ),
   ),
   CircleAvatar(
-    backgroundColor: Colors.blueAccent,
-    radius: 60,
+    backgroundColor: Colors.white,
+    radius: 100,
     child: FaIcon(
       FontAwesomeIcons.solidHeart,
-      color: Colors.white,
+      color: Colors.blueAccent,
       size: 50,
     ),
   ),
   CircleAvatar(
-    backgroundColor: Colors.blueAccent,
-    radius: 60,
+    backgroundColor: Colors.white,
+    radius: 100,
     child: FaIcon(
       FontAwesomeIcons.solidHeart,
-      color: Colors.white,
+      color: Colors.blueAccent,
       size: 50,
     ),
   ),
   CircleAvatar(
-    backgroundColor: Colors.blueAccent,
-    radius: 60,
+    backgroundColor: Colors.white,
+    radius: 100,
     child: FaIcon(
       FontAwesomeIcons.solidHeart,
-      color: Colors.white,
+      color: Colors.blueAccent,
       size: 50,
     ),
   ),
@@ -101,7 +101,7 @@ class MenuList extends StatelessWidget {
           shrinkWrap: true,
           itemBuilder: (context, index) {
             return Padding(
-              padding: const EdgeInsets.all(30),
+              padding: const EdgeInsets.all(5),
               child: menuList[index],
             );
           }),
@@ -233,13 +233,137 @@ class FavoriteScenesComponent extends StatelessWidget {
           mainAxisSpacing: 8,
           //childAspectRatio: (2 / 1),
           crossAxisSpacing: 20,
-
         ),
         itemBuilder: (
           context,
           index,
         ) {
           return favoriteScenes[index];
+        },
+      ),
+    );
+  }
+}
+
+List<FavoriteAccessoriesCard> favoriteAccessories = [
+  FavoriteAccessoriesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 30,
+    ),
+    text: 'cat',
+    description: 'open',
+  ),
+  FavoriteAccessoriesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 30,
+    ),
+    text: 'cat',
+    description: 'open',
+  ),
+  FavoriteAccessoriesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 30,
+    ),
+    text: 'cat',
+    description: 'open',
+  ),
+  FavoriteAccessoriesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 30,
+    ),
+    text: 'cat',
+    description: 'open',
+  ),
+  FavoriteAccessoriesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 30,
+    ),
+    text: 'cat',
+    description: 'open',
+  ),
+  FavoriteAccessoriesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 30,
+    ),
+    text: 'cat',
+    description: 'open',
+  ),
+  FavoriteAccessoriesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 30,
+    ),
+    text: 'cat',
+    description: 'open',
+  ),
+];
+
+class FavoriteAccessoriesCard extends StatelessWidget {
+  final String text;
+  final String description;
+  final FaIcon icon;
+  const FavoriteAccessoriesCard(
+      {Key? key,
+      required this.text,
+      required this.icon,
+      required this.description})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 100,
+      width: 100,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.all(Radius.circular(20)),
+      ),
+      child: Column(
+        children: [
+          Container(height: 50, width: 50, child: icon),
+          Text(text),
+          Text(description),
+        ],
+      ),
+    );
+  }
+}
+
+class FavoriteAccessoriesComponent extends StatelessWidget {
+  const FavoriteAccessoriesComponent({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      height: 200,
+      child: GridView.builder(
+        itemCount: favoriteAccessories.length,
+        scrollDirection: Axis.vertical,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 8,
+          //childAspectRatio: (2 / 1),
+          crossAxisSpacing: 20,
+        ),
+        itemBuilder: (
+          context,
+          index,
+        ) {
+          return favoriteAccessories[index];
         },
       ),
     );
