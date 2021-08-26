@@ -86,6 +86,7 @@ List<CircleAvatar> menuList = [
       color: Colors.blueAccent,
       size: 50,
     ),
+
   ),
 ];
 
@@ -114,7 +115,7 @@ List<FavoriteScenesCard> favoriteScenes = [
     icon: FaIcon(
       FontAwesomeIcons.cat,
       color: Colors.black,
-      size: 50,
+      size: 30,
     ),
     text: 'cat',
   ),
@@ -122,7 +123,7 @@ List<FavoriteScenesCard> favoriteScenes = [
     icon: FaIcon(
       FontAwesomeIcons.cat,
       color: Colors.black,
-      size: 50,
+      size: 30,
     ),
     text: 'cat',
   ),
@@ -130,7 +131,7 @@ List<FavoriteScenesCard> favoriteScenes = [
     icon: FaIcon(
       FontAwesomeIcons.cat,
       color: Colors.black,
-      size: 50,
+      size: 30,
     ),
     text: 'cat',
   ),
@@ -138,7 +139,7 @@ List<FavoriteScenesCard> favoriteScenes = [
     icon: FaIcon(
       FontAwesomeIcons.cat,
       color: Colors.black,
-      size: 50,
+      size: 30,
     ),
     text: 'cat',
   ),
@@ -146,7 +147,7 @@ List<FavoriteScenesCard> favoriteScenes = [
     icon: FaIcon(
       FontAwesomeIcons.cat,
       color: Colors.black,
-      size: 50,
+      size: 30,
     ),
     text: 'cat',
   ),
@@ -154,7 +155,7 @@ List<FavoriteScenesCard> favoriteScenes = [
     icon: FaIcon(
       FontAwesomeIcons.cat,
       color: Colors.black,
-      size: 50,
+      size: 30,
     ),
     text: 'cat',
   ),
@@ -162,7 +163,7 @@ List<FavoriteScenesCard> favoriteScenes = [
     icon: FaIcon(
       FontAwesomeIcons.cat,
       color: Colors.black,
-      size: 50,
+      size: 30,
     ),
     text: 'cat',
   ),
@@ -170,7 +171,7 @@ List<FavoriteScenesCard> favoriteScenes = [
     icon: FaIcon(
       FontAwesomeIcons.cat,
       color: Colors.black,
-      size: 50,
+      size: 30,
     ),
     text: 'cat',
   ),
@@ -178,7 +179,7 @@ List<FavoriteScenesCard> favoriteScenes = [
     icon: FaIcon(
       FontAwesomeIcons.cat,
       color: Colors.black,
-      size: 50,
+      size: 30,
     ),
     text: 'cat',
   ),
@@ -186,7 +187,7 @@ List<FavoriteScenesCard> favoriteScenes = [
     icon: FaIcon(
       FontAwesomeIcons.cat,
       color: Colors.black,
-      size: 50,
+      size: 30,
     ),
     text: 'cat',
   ),
