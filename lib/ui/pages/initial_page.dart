@@ -20,6 +20,7 @@ class InitialPage extends StatelessWidget {
           ),
         ),
         MenuList(),
+        FavoriteScenesComponent(),
       ],
     );
   }

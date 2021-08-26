@@ -87,7 +87,6 @@ List<CircleAvatar> menuList = [
       size: 50,
     ),
   ),
-
 ];
 
 class MenuList extends StatelessWidget {
@@ -106,6 +105,143 @@ class MenuList extends StatelessWidget {
               child: menuList[index],
             );
           }),
+    );
+  }
+}
+
+List<FavoriteScenesCard> favoriteScenes = [
+  FavoriteScenesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 50,
+    ),
+    text: 'cat',
+  ),
+  FavoriteScenesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 50,
+    ),
+    text: 'cat',
+  ),
+  FavoriteScenesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 50,
+    ),
+    text: 'cat',
+  ),
+  FavoriteScenesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 50,
+    ),
+    text: 'cat',
+  ),
+  FavoriteScenesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 50,
+    ),
+    text: 'cat',
+  ),
+  FavoriteScenesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 50,
+    ),
+    text: 'cat',
+  ),
+  FavoriteScenesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 50,
+    ),
+    text: 'cat',
+  ),
+  FavoriteScenesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 50,
+    ),
+    text: 'cat',
+  ),
+  FavoriteScenesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 50,
+    ),
+    text: 'cat',
+  ),
+  FavoriteScenesCard(
+    icon: FaIcon(
+      FontAwesomeIcons.cat,
+      color: Colors.black,
+      size: 50,
+    ),
+    text: 'cat',
+  ),
+];
+
+class FavoriteScenesCard extends StatelessWidget {
+  final String text;
+  final FaIcon icon;
+  const FavoriteScenesCard({Key? key, required this.text, required this.icon})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 50,
+      width: 200,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.all(Radius.circular(20)),
+      ),
+      child: Row(
+        children: [
+          Container(height: 50, width: 50, child: icon),
+          Text(text),
+        ],
+      ),
+    );
+  }
+}
+
+class FavoriteScenesComponent extends StatelessWidget {
+  const FavoriteScenesComponent({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      height: 200,
+      child: GridView.builder(
+        itemCount: favoriteScenes.length,
+        scrollDirection: Axis.horizontal,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 8,
+          //childAspectRatio: (2 / 1),
+          crossAxisSpacing: 20,
+
+        ),
+        itemBuilder: (
+          context,
+          index,
+        ) {
+          return favoriteScenes[index];
+        },
+      ),
     );
   }
 }
